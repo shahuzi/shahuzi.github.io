@@ -1,1 +1,131 @@
-hello world
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>End-to-End Emotional Speech Synthesis Using Style Tokens and Semi-Supervised Training</title>
+<style type="text/css">
+</style></head>
+<body>
+<h2><strong>End-to-End Emotional Speech Synthesis Using Style Tokens and Semi-Supervised Training</strong></h2>
+<h3>Paper:</h3>
+<p><a href="https://arxiv.org/abs/"> http://arxiv.org/abs</a> (Submitted to Asia-Pacific Signal and Information Processing Association Annual Summit and Conference 2019)</p>
+<h3>Authors: </h3>
+Peng-fei Wu, Zhen-Hua Ling, Li-juan Liu, Hong-chuan Wu, Yuan Jiang, Li-Rong Dai
+<h3>Abstract: </h3>
+This paper proposed an end-to-end emotional speech synthesis (ESS) approach 
+called semi-GST which uses global style tokens (GSTs) and semi-supervised training, 
+it can implement ESS with a few number of emotion labels and maintain similar performance 
+as a full-label-used model. Semi-GST defines a bank of tokens with the same number of emotion 
+categories, and uses partial emotion labels to train the tokens so that the learned tokens have 
+a good correlation with emotions. This method increases the token interpretability in GSTs model 
+and can be used for automatic emotion annotation. Objective and subjective experimental results 
+show that semi-GST outperformed a Tacotron-based semi-supervised ESS model when using the same 
+number of emotion labels. In addition, it achieved similar performance with a Tacotron-based fully 
+supervised training ESS model, but used only 5% emotion labels.</h3>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3>1. Comparsion of EI and ED</h3>
+
+<table border="1">
+  <tr>
+    <th width="100">Methods</th>
+    <td align="center" height="50"><b>neutral</b></td>
+    <td align="center" height="50"><b>happy</b></td>
+    <td align="center" height="50"><b>sad</b></td>
+    <td align="center" height="50"><b>angry</b></td>
+  </tr>
+  <tr>
+    <td align="center"><b>ED</b></td>
+    <td><audio controls="">
+        <source src="wavs/ED/neutral/00000465.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/ED/happy/00010135.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/ED/sad/00020314.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/ED/angry/00030459.wav" type="audio/wav">
+    </audio></td>
+    
+  </tr>
+  <tr>
+    <td align="center"><b>EI</b></td>
+    <td><audio controls="">
+        <source src="wavs/EI/6.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI/10.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI/27.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI/39.wav" type="audio/wav">
+    </audio></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+
+<h3>2. Comparsion of EI, EI-part and semi-GST </h3>
+<table border="1">
+  <tr>
+    <th width="100">Methods</th>
+    <td align="center" height="50"><b>neutral</b></td>
+    <td align="center" height="50"><b>happy</b></td>
+    <td align="center" height="50"><b>sad</b></td>
+    <td align="center" height="50"><b>angry</b></td>
+  </tr>
+    <tr>
+    <td width="96" align="center"><b>EI-part</b></td>
+    <td><audio controls="">
+        <source src="wavs/EI-part/5.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI-part/15.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI-part/25.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI-part/35.wav" type="audio/wav">
+    </audio></td>
+  </tr>
+  
+  <tr>
+    <td width="96" align="center"><b>EI</b></td>
+    <td><audio controls="">
+        <source src="wavs/EI/5.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI/15.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI/25.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/EI/35.wav" type="audio/wav">
+    </audio></td>
+  </tr>
+
+  <tr>
+    <td width="96" align="center"><b>semi-GST</b></td>
+    <td><audio controls="">
+        <source src="wavs/semi-GST/5.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/semi-GST/15.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/semi-GST/25.wav" type="audio/wav">
+    </audio></td>
+    <td><audio controls="">
+        <source src="wavs/semi-GST/35.wav" type="audio/wav">
+    </audio></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body></html>
